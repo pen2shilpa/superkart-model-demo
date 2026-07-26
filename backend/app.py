@@ -8,7 +8,7 @@ from flask import Flask, request, jsonify
 
 # Initialize the Flask application
 product_store_sales_predictor_api = Flask("SuperKart Product Store Sales Predictor")
-
+serialized_model_file_path = "superkart_model_V1_0.joblib"
 # Load the trained machine learning model
 model = joblib.load(serialized_model_file_path)
 
